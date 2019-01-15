@@ -95,5 +95,12 @@ IF EXIST *PyART_dealiased_velocity* (
 	set PyART_dealiased_presence=False
 )
 
+IF EXIST *snow_rate* (
+	mkdir snow_rate
+	move *snow_rate* snow_rate
+) ELSE (
+	set snow_rate_presence=False
+)
+
 ECHO.Completed!
 ECHO ON
