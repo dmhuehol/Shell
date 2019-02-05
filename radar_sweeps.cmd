@@ -13,7 +13,7 @@ set /p end="Enter final sweep number: "
 FOR /L %%A IN (%start%,1,%end%) DO mkdir "Sweep %%A"
 
 :: Move appropriate images to the new folders
-FOR /L %%A IN (%start%,1,%end%) DO move *.%%A.ang* "Sweep %%A"
+FOR /L %%A IN (%start%,1,%end%) DO move *.%%A.* "Sweep %%A"
 
 ECHO.Completed!
 

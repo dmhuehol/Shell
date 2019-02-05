@@ -64,6 +64,13 @@ IF EXIST *specific_differential* (
 	set PhiDP_presence=False
 )
 
+IF EXIST *kdp* (
+	mkdir Kdp
+	move *kdp* Kdp
+) ELSE (
+	set Kdp_presence=False
+)
+
 
 :: Additional possible keys from KASPR
 
