@@ -9,12 +9,25 @@
 set /p start="Enter first sweep number: "
 set /p end="Enter final sweep number: "
 
+set /p scanType="PPI or RHI? "
+
+IF /I "%scanType%"=="PPI" (
 :: Make folders
-FOR /L %%A IN (%start%,1,%end%) DO mkdir "Sweep %%A"
+    FOR /L %%A IN (%start%,1,%end%) DO mkdir "Sweep %%A"
 
 :: Move appropriate images to the new folders
-FOR /L %%A IN (%start%,1,%end%) DO move *.%%A.* "Sweep %%A"
+    FOR /L %%A IN (%start%,1,%end%) DO move *.%%A.ang* "Sweep %%A"
 
-ECHO.Completed!
+    ECHO.Completed!
+)
 
+IF /I "%scanType%"=="RHI" (
+:: Make folders
+    FOR /L %%A IN (%start%,1,%end%) DO mkdir "Sweep %%A"
+
+:: Move appropriate images to the new folders
+    FOR /L %%A IN (%start%,1,%end%) DO move *.%%A.* "Sweep %%A"
+
+    ECHO.Completed!
+)
 ECHO ON
