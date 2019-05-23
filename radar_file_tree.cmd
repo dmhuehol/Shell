@@ -50,6 +50,13 @@ IF EXIST *cross_correlation* (
 	set rhoHV_presence=False
 )
 
+IF EXIST *correlation_coefficient* (
+	mkdir rhoHV
+	move *correlation_coefficient* rhoHV
+) ELSE (
+	set rhoHV_presence=False
+)
+
 IF EXIST *normalized_coherent* (
 	mkdir NCP
 	move *normalized_coherent* NCP
@@ -57,16 +64,16 @@ IF EXIST *normalized_coherent* (
 	set NCP_presence=False
 )
 
-IF EXIST *specific_differential* (
+IF EXIST *one_way_differential_phase* (
 	mkdir PhiDP
-	move *specific_differential* PhiDP
+	move *one_way_differential_phase* PhiDP
 ) ELSE (
 	set PhiDP_presence=False
 )
 
-IF EXIST *kdp* (
+IF EXIST *two_way_differential_phase* (
 	mkdir Kdp
-	move *kdp* Kdp
+	move *two_way_differential_phase* Kdp
 ) ELSE (
 	set Kdp_presence=False
 )
@@ -76,7 +83,7 @@ IF EXIST *kdp* (
 
 IF EXIST *linear_depolarization* (
 	mkdir LDR
-	move *.linear_depolarization.* LDR
+	move *linear_depolarization* LDR
 ) ELSE (
 	set LDR_presence=False
 )
@@ -107,6 +114,13 @@ IF EXIST *snow_rate* (
 	move *snow_rate* snow_rate
 ) ELSE (
 	set snow_rate_presence=False
+)
+
+IF EXIST *vdiv* (
+	mkdir vdiv
+	move *vdiv* vdiv
+) ELSE (
+	set vdiv_presence=False
 )
 
 ECHO.Completed!
