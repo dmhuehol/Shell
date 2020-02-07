@@ -123,5 +123,19 @@ IF EXIST *vdiv* (
 	set vdiv_presence=False
 )
 
+IF EXIST *kdp* (
+	mkdir kdp
+	move *kdp* kdp
+) ELSE (
+	set kdp_presence=False
+)
+
+IF EXIST *differential_phase* (
+	mkdir phidp
+	move *differential_phase* phidp
+) ELSE (
+	set phidp_presence=False
+)
+
 ECHO.Completed!
 ECHO ON
