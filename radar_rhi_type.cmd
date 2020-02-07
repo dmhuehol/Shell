@@ -1,7 +1,7 @@
 :: Script to automatically create a directory structure and move radar images into the appropriate folders.
-:: Written by: Daniel Hueholt
-:: Undergraduate Research Assistant at Environment Analytics
-:: October 2018
+:: Written by: Laura Tomkins
+:: Graduate Research Assistant at Environment Analytics
+:: February 2020
 
 @ECHO OFF
 
