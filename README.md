@@ -8,3 +8,7 @@ For a folder containing files from azimuths 100, 141, and 236.
 Open the script  
 Enter the azimuths as: 100 141 236  
 Completed!
+
+## Sources and credit
+Code and documentation written by Daniel Hueholt and Laura Tomkins under the advisement of Dr. Sandra Yuter at North Carolina State University.  
+[<img src="http://www.environmentanalytics.com/wp-content/uploads/2016/05/cropped-Environment_Analytics_Logo_Draft.png">](http://www.environmentanalytics.com)
