@@ -10,5 +10,5 @@ Enter the azimuths as: 100 141 236
 Completed!
 
 ## Sources and credit
-Code and documentation written by Daniel Hueholt and Laura Tomkins under the advisement of Dr. Sandra Yuter at North Carolina State University.  
+Code and documentation written by [Daniel Hueholt](https://github.com/dmhuehol) and [Laura Tomkins](https://github.com/lauratomkins) under the advisement of Dr. Sandra Yuter at North Carolina State University.  
 [<img src="http://www.environmentanalytics.com/wp-content/uploads/2016/05/cropped-Environment_Analytics_Logo_Draft.png">](http://www.environmentanalytics.com)
